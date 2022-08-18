@@ -23,7 +23,7 @@ setup(name='adagram',
               'adagram/*', ['adagram/*.pyx'],
               include_dirs=[np.get_include()],
               extra_compile_args=[
-                  '-march=apple-latest', '-O3', '-ffast-math', '-std=c99'],
+                  '-mcpu=apple-m1', '-O3', '-ffast-math', '-std=c99'],
               extra_link_args=['-lm'],
           ),
           ]),
